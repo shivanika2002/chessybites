@@ -1,0 +1,302 @@
+html{
+    background-color: black;
+    color:white;
+}
+#dishHeader{
+    text-align: center;
+    font-size:25px;
+}
+mark{
+    background-color: black;
+    color:red
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.aiProjects{
+    overflow:auto;
+    white-space: nowrap;
+    margin-left:25px;
+}
+.project{
+    display:inline-block;
+    width:250px;
+    height:320px;
+    margin:10px;
+    background-color:white;
+    color:black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+.userInput{
+    position:relative;
+    bottom: 25px;
+}
+.content{
+    width:200px;
+    height:fit-content;
+    padding-top:1px;
+    padding-left: 8px;
+}
+
+.header{
+    font-size:23px;
+    position:relative;
+    bottom:22px;
+}
+.subHeader{
+    position:relative;
+    line-height:1.7;
+    bottom:23px;
+}
+.servicecontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-between;
+    position:relative;
+    bottom:25px;
+}
+.servicecontainer div{
+    width:570px;
+    height:fit-content;
+    margin:15px;
+}
+.servicecontainertwo{
+    position:relative;
+    right:120px;
+}
+#serviceHeader{
+    font-size:50px;
+    line-height:1.7;
+    font-family: 'PT Serif', serif;
+}
+#serviceSubHeader{
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: 'PT Serif', serif;
+    position:relative;
+    bottom:20px;
+}
+#serviceForm{
+    font-family: 'PT Serif', serif;
+    position:relative;
+    width:400px;
+    height:fit-content;
+    left:180px;
+    top:80px;
+    background-color: white;
+    color:black;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    line-height: 1.8;
+}
+#billAmount{
+    text-align: center;
+}
+#calcBtn{
+    padding:10px 15px;
+    margin-top: 5px;
+    margin-left:40px;
+    margin-bottom: 25px;
+    width:300px;
+    background-color: red;
+    color: white;
+    border-color: white;
+    font-size: 16px;
+}
+label{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+input[type=tel]{
+    padding:10px 15px;
+    margin-left:25px;
+    margin-top: 10px;
+    width:300px;
+}
+input[type=tel]:hover{
+    border-color: red;
+}
+input[type=text]{
+    padding:10px 15px;
+    margin-left:25px;
+    margin-top: 10px;
+    width:300px;
+}
+input[type=text]:hover{
+    border-color: red;
+}
+input[type=number]{
+    width:30px;
+}
+.userInput label{
+    position:relative;
+    right:16px;
+}
+#orderBtn{
+    padding:10px 15px;
+    margin-top: 10px;
+    margin-left:40px;
+    margin-bottom: 25px;
+    width:300px;
+    background-color: red;
+    color: white;
+    border-color: white;
+    font-size: 16px;
+}
+#userIdeaSubmitBtn:hover{
+    font-size: 18px;
+}
+@media screen and (max-width:1350px){
+    .servicecontainer{
+        justify-content: center;
+        flex-direction: column;
+        justify-items: center;
+        justify-content:center;
+    }
+    .servicecontainer div{
+        width:auto;
+        height: fit-content;
+        margin:0px;
+    }
+    .servicecontainerone{
+        text-align: center;
+    }
+    .servicecontainertwo{
+        position:relative;
+        right:0px;
+        text-align: left;
+        display:flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    #serviceForm{
+        position:relative;
+        left:0px;
+        top:0px;
+        font-family: 'PT Serif', serif;
+    }
+}
+
+
+.top{
+    width:auto;
+    height:auto;
+    background-image: url('clubSandwhich.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    animation: opacity_Animation;
+    animation-duration: 3s;
+}
+.top ul{
+    list-style-type:none;
+    overflow:hidden;
+    padding:0px;
+    margin:0px;
+    background-color: rgba(0,0,0,.2);
+}
+.top li a{
+    text-decoration: none;
+    font-size:20px;
+    color:white;
+    padding:10px 20px;
+    float:left;
+}
+.top li a:hover{
+    border-style:solid;
+    border-left:none;
+    border-right:none;
+    border-top: none;
+    border-color:white;
+    border-width:1px;
+}
+#header{
+    text-align:center;
+    padding-top:5%;
+    color:white;
+    font-family: 'Zen Antique', serif;
+    font-size: 40px;
+}
+
+#subheader{
+    line-height: 1.5;
+    font-family: 'Zen Antique', serif;
+    font-size:20px;
+    text-align: center;
+    color:white;
+}
+
+.top button{
+    background-color: black;
+    color:white;
+    padding:15px 45px;
+    font-size:20px;
+    border-radius:10px;
+    border-style: none;
+}
+.top button:hover{
+    background-color: white;
+    color:black;
+    border-style: none;
+}
+.middle{
+    width:auto;
+    height:800px;
+    background-color:rgb(19, 16, 16);
+    animation: opacity_Animation;
+    animation-duration: 3s;
+}
+
+.middle_header{
+    color:white;
+    font-family: 'Zen Antique', serif;
+    font-size: 40px;
+    text-align:center;
+    padding-top:3%;
+}
+
+.middle_sub_header{
+    color:white;
+    font-family: 'Zen Antique', serif;
+    font-size: 18px;
+    text-align:center;
+    position:relative;
+    top:5%;
+    line-height:1.8;
+}
+
+.container div{
+    background-color: beige;
+    width:350px;
+    height:450px;
+    margin:20px;
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: rgb(19, 16, 16);
+    position:relative;
+    top:10%;
+}
+
+.bottom{
+    width:auto;
+    height:300px;
+    background-color:rgb(24, 23, 23);
+}
+@keyframes opacity_Animation{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}

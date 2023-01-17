@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="top">
+    <ul>
+        <li><a href="design.html">Home</a></li>
+        <li><a href="design.html">Dishes</a></li>
+    </ul>
+    </div>
+    <p id="adminheader">Welcome to ChessyBites Admin Panel</p>
+    <div class="adminopeartion">
+    <div class="tablestatus">
+        <h1>Table Status</h1>
+        <input type="checkbox" id="table1" value="1">
+        <label for="table1">Table-1</label><br>
+        <input type="checkbox" id="table2"  value="2">
+        <label for="table2">Table-2</label><br>
+        <input type="checkbox" id="table3"  value="3">
+        <label for="table3">Table-3</label><br>
+        <input type="checkbox" id="table4"  value="4">
+        <label for="table4">Table-4</label><br>
+        <input type="checkbox" id="table5"  value="5">
+        <label for="table5">Table-5</label><br>
+        <input type="checkbox" id="table6"  value="6">
+        <label for="table6">Table-6</label><br>
+        <input type="checkbox" id="table7"  value="7">
+        <label for="table7">Table-7</label><br>
+        <input type="checkbox" id="table8"  value="8">
+        <label for="table8">Table-8</label><br>
+        <input type="checkbox" id="table9"  value="9">
+        <label for="table9">Table-9</label><br>
+        <input type="checkbox" id="table10"  value="10">
+        <label for="table10">Table-10</label><br><br>
+        <button type="button" id="tableStatusBtn">Served</button>
+    </div>
+    <div class="orders">
+        <h1>Orders</h1>
+        <ol id="list">
+
+        </ol>
+    </div>
+    </div>
+    <div class="adminoperation2">
+    <div class="addremoveitems">
+    <h1>Add/Remove Item</h1><br>
+    <input type="checkbox" id="briyaniStatus" value="Briyani">
+    <label for="briyaniStatus" id="briyaniLabel">Briyani Noodles</label><br>
+
+    <input type="checkbox" id="icecreamStatus" value="IceCream">
+    <label for="icecreamStatus" id="icecreamLabel">Icecream</label><br>
+
+    <input type="checkbox" id="grapejuiceStatus" value="GrapeJuice">
+    <label for="grapejuiceStatus" id="grapejuiceLabel">GrapeJuice</label><br>
+    
+    <input type="checkbox" id="clubsandwichStatus" value="ClubSandwich">
+    <label for="clubsandwichStatus" id="clubsandwichLabel">Club Sandwich</label><br>
+
+    <input type="checkbox" id="meatdonorStatus" value="MeatDonor">
+    <label for="meatdonorStatus" id="meatdonorLabel">Meat Donor</label><br>
+
+    <input type="checkbox" id="pizzaStatus" value="Pizza">
+    <label for="pizzaStatus" id="pizzaLabel">Pizza</label><br>
+
+    <input type="checkbox" id="brownieStatus" value="Brownie">
+    <label for="brownieStatus" id="brownieLabel">Brownie</label><br>
+
+    <input type="checkbox" id="burgerStatus" value="Burger">
+    <label for="burgerStatus" id="burgerLabel">Burger</label><br>
+
+    <input type="checkbox" id="milkshakeStatus" value="MilkShake">
+    <label for="milkshakeStatus" id="milkshakeLabel">Milk Shake</label><br>
+
+    <input type="checkbox" id="pastaStatus" value="Pasta">
+    <label for="pastaStatus" id="pastaLabel">Pasta</label><br>
+
+    <input type="checkbox" id="tacosStatus" value="Tacos">
+    <label for="tacosStatus" id="tacosLabel">Tacos</label><br><br>
+
+    <button type="button" id="updateBtn">Update Status</button>
+    </div>
+    
+    <div class="dishRate">
+        <h1>Upadte Dish Price</h1>
+
+            <input type="checkbox" id="Briyani" value="Briyani">
+            <label for="Briyani" id="BriyaniLabel">Briyani Noodles</label>
+            <input type=number min="1"  id="BriyaniQuantity"><br>
+
+            <input type="checkbox" id="Icecream" value="IceCream">
+            <label for="Icecream" id="IcecreamLabel">Icecream</label>
+            <input type=number min="1" id="IceCreamQuantity"><br>
+
+            <input type="checkbox" id="GrapeJuice" value="GrapeJuice">
+            <label for="GrapeJuice" id="GrapeJuiceLabel">GrapeJuice</label>
+            <input type=number min="1" id="GrapeJuiceQuantity"><br>
+
+            <input type="checkbox" id="ClubSandwich" value="ClubSandwich">
+            <label for="ClubSandwich" id="ClubSandwichLabel">ClubSandwich</label>
+            <input type="number" min="1"  id="ClubSandwichQuantity"><br>
+
+            <input type="checkbox" id="MeatDonor" value="MeatDonor">
+            <label for="MeatDonor" id="MeatDonorLabel">MeatDonor</label>
+            <input type="number" min="1" id="MeatDonorQuantity"><br>
+
+            <input type="checkbox" id="Pizza" value="Pizza">
+            <label for="Pizza" id="PizzaLabel">Pizza</label>
+            <input type="number" min="1" id="PizzaQuantity"><br>
+
+            <input type="checkbox" id="Brownie" value="Brownie">
+            <label for="Brownie" id="BrownieLabel">Brownie</label>
+            <input type="number" min="1"  id="BrownieQuantity"><br>
+
+            <input type="checkbox" id="Burger" value="Burger">
+            <label for="Burger" id="BurgerLabel">Burger</label>
+            <input type="number" min="1"  id="BurgerQuantity"><br>
+
+            <input type="checkbox" id="MilkShake" value="MilkShake">
+            <label for="MilkShake" id="MilkShakeLabel">MilkShake</label>
+            <input type="number" min="1" id="MilkShakeQuantity"><br>
+
+            <input type="checkbox" id="Tacos" value="Tacos">
+            <label for="Tacos" id="TacosLabel">Tacos</label>
+            <input type="number" min="1"  id="TacosQuantity"><br>
+
+            <input type="checkbox" id="Pasta" value="Pasta">
+            <label for="Pasta" id="PastaLabel">Pasta</label>
+            <input type="number" min="1" id="PastaQuantity"><br><br>
+            
+            <button type="button" id="updatePrice">Upadate Price</button>
+    </div>
+    </div>
+    
+    <script type="module">
+          
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+          import {getDatabase,set,get,update,remove,ref,child} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+        
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyBR2kicO-oW1aph4o76Vt9OxnRCXsuGeC8",
+            authDomain: "cheesybite-3ab8c.firebaseapp.com",
+            databaseURL: "https://cheesybite-3ab8c-default-rtdb.firebaseio.com",
+            projectId: "cheesybite-3ab8c",
+            storageBucket: "cheesybite-3ab8c.appspot.com",
+            messagingSenderId: "994789801519",
+            appId: "1:994789801519:web:ab691495d4db298f1910da",
+            measurementId: "G-XMG22GMXJE"
+          };
+        
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const db = getDatabase();
+          let ul = document.getElementById('list');
+          function addListItem(dish){
+            let li = document.createElement('li');
+            li.innerHTML = dish;
+            ul.appendChild(li);
+          }
+          function fetchAllData(){
+            ul.innerHTML = "";
+            let count = 1;
+            while(count<=10){
+                fetchData(count)
+                count++;
+            }
+          }
+          function fetchData(no){
+            const dbref = ref(db);
+            get(child(dbref,'Table/'+no)).then((snapshot)=>{
+                if(snapshot.exists()){
+                    addListItem(snapshot.val().dish);
+                }else{
+                    alert("No data");
+                }
+            }).catch((error)=>{
+                alert("No Connection");
+            });
+          }
+          
+          setInterval(fetchAllData,10000);
+
+          let briyaniStatus = document.getElementById('briyaniStatus');
+          let briyaniLabel = document.getElementById('briyaniLabel');
+
+          let icecreamStatus = document.getElementById('icecreamStatus');
+          let icecreamLabel = document.getElementById('icecreamLabel');
+
+          let grapejuiceStatus = document.getElementById('grapejuiceStatus');
+          let grapejuiceLabel = document.getElementById('grapejuiceLabel');
+
+          let clubsandwichStatus = document.getElementById('clubsandwichStatus');
+          let clubsandwichLabel = document.getElementById('clubsandwichLabel');
+
+          let meatdonorStatus = document.getElementById('meatdonorStatus');
+          let meatdonorLabel = document.getElementById('meatdonorLabel');
+
+          let pizzaStatus = document.getElementById('pizzaStatus');
+          let pizzaLabel = document.getElementById('pizzaLabel');
+
+          let brownieStatus = document.getElementById('brownieStatus');
+          let brownieLabel = document.getElementById('brownieLabel');
+
+          let burgerStatus = document.getElementById('burgerStatus');
+          let burgerLabel = document.getElementById('burgerLabel');
+
+          let milkshakeStatus = document.getElementById('milkshakeStatus');
+          let milkshakeLabel= document.getElementById('milkshakeLabel');
+
+          let pastaStatus = document.getElementById('pastaStatus');
+          let pastaLabel = document.getElementById('pastaLabel');
+
+          let tacosStatus= document.getElementById('tacosStatus');
+          let tacosLabel= document.getElementById('tacosLabel');
+
+          let updateBtn = document.getElementById('updateBtn');
+          updateBtn.onclick = ()=>{
+          if(briyaniStatus.checked==false){
+              briyaniLabel.style.color = "grey";
+              insertStatus('Briyani','No');
+          }
+          else{
+              briyaniLabel.style.color = "black";
+              insertStatus('Briyani','Yes');
+          }
+          if(icecreamStatus.checked==false){
+              icecreamLabel.style.color = "grey";
+              insertStatus('Icecream','No');
+          }
+          else{
+              icecreamLabel.style.color = "black";
+              insertStatus('Icecream','Yes');
+          }
+          if(grapejuiceStatus.checked==false){
+              grapejuiceLabel.style.color = "grey";
+              insertStatus('GrapeJuice','No');
+          }
+          else{
+              grapejuiceLabel.style.color = "black";
+              insertStatus('GrapeJuice','Yes');
+          }
+          if(clubsandwichStatus.checked==false){
+              clubsandwichLabel.style.color = "grey";
+              insertStatus('ClubSandwich','No');
+          }
+          else{
+              clubsandwichLabel.style.color = "black";
+              insertStatus('ClubSandwich','Yes');
+          }
+          if(meatdonorStatus.checked==false){
+              meatdonorLabel.style.color = "grey";
+              insertStatus('MeatDonor','No');
+          }
+          else{
+              meatdonorLabel.style.color = "black";
+              insertStatus('MeatDonor','Yes');
+          }
+          if(pizzaStatus.checked==false){
+              pizzaLabel.style.color = "grey";
+              insertStatus('Pizza','No');
+          }
+          else{
+              pizzaLabel.style.color = "black";
+              insertStatus('Pizza','Yes');
+          }
+          if(brownieStatus.checked==false){
+              brownieLabel.style.color = "grey";
+              insertStatus('Brownie','No');
+          }
+          else{
+              brownieLabel.style.color = "black";
+              insertStatus('Brownie','Yes');
+          }
+          if(burgerStatus.checked==false){
+              burgerLabel.style.color = "grey";
+              insertStatus('Burger','No');
+          }
+          else{
+              burgerLabel.style.color = "black";
+              insertStatus('Burger','Yes');
+          }
+          if(milkshakeStatus.checked==false){
+              milkshakeLabel.style.color = "grey";
+              insertStatus('MilkShake','No');
+          }
+          else{
+              milkshakeLabel.style.color = "black";
+              insertStatus('MilkShake','Yes');
+          }
+          if(pastaStatus.checked==false){
+              pastaLabel.style.color = "grey";
+              insertStatus('Pasta','No');
+          }
+          else{
+              pastaLabel.style.color = "black";
+              insertStatus('Pasta','Yes');
+          }
+          if(tacosStatus.checked==false){
+              tacosLabel.style.color = "grey";
+              insertStatus('Tacos','No');
+          }
+          else{
+              tacosLabel.style.color = "black";
+              insertStatus('Tacos','Yes');
+          }
+      }
+      function insertStatus(dish,dishStatus){
+          set(ref(db,"Dish/"+dish),{
+            Status : dishStatus
+          }).then(()=>{
+            alert('Success');
+          }).catch((error)=>{
+              alert("Failed");
+          });
+        }
+
+        let paidTableStatus = document.getElementById('tableStatusBtn');
+        paidTableStatus.addEventListener('click',checkTableStatus);
+        function checkTableStatus(){
+          let table1 = document.getElementById('table1');
+          let table2 = document.getElementById('table2');
+          let table3 = document.getElementById('table3');
+          let table4 = document.getElementById('table4');
+          let table5 = document.getElementById('table5');
+          let table6 = document.getElementById('table6');
+          let table7 = document.getElementById('table7');
+          let table8 = document.getElementById('table8');
+          let table9 = document.getElementById('table9');
+          let table10 = document.getElementById('table10');
+          if(table1.checked==true){
+              table1.checked = false;
+              tableStatus(table1.value);
+          }
+          if(table2.checked==true){
+              table2.checked = false;
+              tableStatus(table2.value);
+          }
+          if(table3.checked==true){
+              table3.checked = false;
+              tableStatus(table3.value);
+          }
+          if(table4.checked==true){
+              table4.checked = false;
+              tableStatus(table4.value);
+          }
+          if(table5.checked==true){
+              table5.checked = false;
+              tableStatus(table5.value);
+          }
+          if(table6.checked==true){
+              table6.checked = false;
+              tableStatus(table6.value);
+          }
+          if(table7.checked==true){
+              table7.checked = false;
+              tableStatus(table7.value);
+          }
+          if(table8.checked==true){
+              table8.checked = false;
+              tableStatus(table8.value);
+          }
+          if(table9.checked==true){
+              table9.checked = false;
+              tableStatus(table9.value);
+          }
+          if(table10.checked==true){
+              table10.checked = false;
+              tableStatus(table10.value);
+          }
+        }
+        function tableStatus(num){
+          set(ref(db,"Table/"+num),{
+            dish : "Yet to Order"
+          }).then(()=>{
+            alert('Success');
+          }).catch((error)=>{
+            alert("Failed")
+          });
+        }
+
+        let Briyani = document.getElementById('Briyani');
+        let Icecream = document.getElementById('Icecream');
+        let GrapeJuice = document.getElementById('GrapeJuice');
+        let ClubSandwich = document.getElementById('ClubSandwich');
+        let MeatDonor = document.getElementById('MeatDonor');
+        let Pizza = document.getElementById('Pizza');
+        let Brownie = document.getElementById('Brownie');
+        let Burger = document.getElementById('Burger');
+        let MilkShake = document.getElementById('MilkShake');
+        let Pasta = document.getElementById('Pasta');
+        let Tacos = document.getElementById('Tacos');
+
+        let updatePrice = document.getElementById('updatePrice');
+        updatePrice.addEventListener('click',updatePriceStatus);
+
+        function updatePriceStatus(){
+            let quantity;
+            if(Briyani.checked==true || Icecream.checked==true || GrapeJuice.checked==true || ClubSandwich.checked==true || MeatDonor.checked==true || Pizza.checked==true || Brownie.checked==true || Burger.checked==true || MilkShake.checked==true || Pasta.checked==true || Tacos.checked==true){
+                if(Briyani.checked==true){
+                    quantity = document.getElementById(Briyani.value+'Quantity').value;
+                    priceStatus(Briyani.value,quantity);
+                }
+                if(Icecream.checked==true){
+                    quantity = document.getElementById(Icecream.value+'Quantity').value;
+                    priceStatus('Icecream',quantity);
+                }
+                if(GrapeJuice.checked==true){
+                    quantity = document.getElementById(GrapeJuice.value+'Quantity').value;
+                    priceStatus(GrapeJuice.value,quantity);
+                }
+
+                if(ClubSandwich.checked==true){
+                    quantity = document.getElementById(ClubSandwich.value+'Quantity').value;
+                    priceStatus(ClubSandwich.value,quantity);
+                }
+
+                if(MeatDonor.checked==true){
+                    quantity = document.getElementById(MeatDonor.value+'Quantity').value;
+                    priceStatus(MeatDonor.value,quantity);
+                }
+
+                if(Pizza.checked==true){
+                    quantity = document.getElementById(Pizza.value+'Quantity').value;
+                    priceStatus(Pizza.value,quantity);
+                }
+
+                if(Brownie.checked==true){
+                    quantity = document.getElementById(Brownie.value+'Quantity').value;
+                    priceStatus(Brownie.value,quantity);
+                }
+
+                if(Burger.checked==true){
+                    quantity = document.getElementById(Burger.value+'Quantity').value;
+                    priceStatus(Burger.value,quantity);
+                }
+
+                if(MilkShake.checked==true){
+                    quantity = document.getElementById(MilkShake.value+'Quantity').value;
+                    priceStatus(MilkShake.value,quantity);
+                }
+
+                if(Pasta.checked==true){
+                    quantity = document.getElementById(Pasta.value+'Quantity').value;
+                    priceStatus(Pasta.value,quantity);
+                }
+
+                if(Tacos.checked==true){
+                    quantity = document.getElementById(Tacos.value+'Quantity').value;
+                    priceStatus(Tacos.value,quantity);
+                }
+            }
+            else{
+                alert("Select any field and update price");
+            }
+        }
+        function priceStatus(item,price){
+          set(ref(db,"Price/"+item),{
+            Price : price
+          }).then(()=>{
+            alert('Success');
+          }).catch((error)=>{
+            alert("Failed")
+          });
+        }
+    </script>
+  </body>
+</html>
